@@ -1,6 +1,7 @@
 import React from 'react';
 import './Header.css'
-import searchIcon from 'material-icons/search';
+import SearchIcon from '@material-ui/icons/Search';
+import { ShoppingBasket } from '@material-ui/icons';
 
 function Header(props) {
   return (
@@ -9,13 +10,13 @@ function Header(props) {
 
        <div className="header_search"> 
          <input className="header_searchInput" type="text"/>
-         <searchIcon className="header_searchIcon"/>
+         <SearchIcon className="header_searchIcon"/>
        </div>
 
-      <div className="hearder_nav">
+      <div className="header_nav">
 
         <div className="header_option">
-          <span className="header_optionLineOne"> 안녕하세요 </span>
+          <span className="header_optionLineOne"> 안녕하세요!</span>
           <span className="header_optionLineTwo"> 로그인하기 </span>
 
 
@@ -35,6 +36,15 @@ function Header(props) {
 
 
           
+        </div>
+
+        <div className="header_optionBasket">
+          <ShoppingBasket/>
+          <span className="header_optionLineTwoheader_basketCount">
+            0
+          </span>
+
+
         </div>
 
 
