@@ -1,28 +1,32 @@
-import React from 'react';
-import './Product.css'
+import React from "react";
+import "./Product.css";
 
-function Product() {
+function Product( {id, title, image, price, rating} ) {
+  
   return (
     <div className="product">
       <div className="product_info">
-        <p>제품1</p>
+        <p>{ title }</p>
         <p className="product_price">
           <small>가격</small>
-          <strong>10,000</strong>
+          <strong>{ price }</strong>
           <small>원</small>
         </p>
 
         <div className="product_rating">
-          <p>★</p>
-          <p>★</p>
-          <p>★</p>
-          <p>★</p>
-
+          {
+             Array(rating)
+              .fill()
+              .map(() => (
+                <p>★</p>
+              ))
+          }
 
         </div>
+
       </div>
       
-      <img src="https://m.withdrama.co.kr/web/product/medium/202107/df0f30b70f46584ae59534e4b81935cb.jpg" alt=""/>
+      <img src={ image } alt=""/>
       <button>장바구니에 담기</button>
     </div>
   );
