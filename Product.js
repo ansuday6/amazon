@@ -26,8 +26,9 @@ function Product( {id, title, image, price, rating} ) {
 
       </div>
       
-      <img src={ image } alt=""/>
+      <img src={image} alt=""/>
       <button>장바구니에 담기</button>
+      
     </div>
   );
 }

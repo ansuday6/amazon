@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 
 
 
-function Header(props) {
+function Header() {
   return (
     <div className="header">
        <Link to= "/">
@@ -44,6 +44,8 @@ function Header(props) {
           
         </div>
 
+      
+      <Link to="checkout">
         <div className="header_optionBasket">
           <ShoppingBasket/>
           <span className="header_optionLineTwoheader_basketCount">
@@ -52,6 +54,7 @@ function Header(props) {
 
 
         </div>
+      </Link>
 
 
 
