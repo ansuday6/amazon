@@ -11,12 +11,12 @@ function Checkout() {
     <div className="checkout">
             <div className="checkout_left">
                 <img className="checkout_ad"
-                     src="https://www.disruptivestatic.com/wp-content/uploads/2018/10/Screen-Shot-2018-10-29-at-11.50.03-AM-450x96.png"
+                     src="https://simage.lottechilsung.co.kr/display/corner/2829/goodsShop_cateBanner_70_PC.jpg"
                      alt=""/>
 
                <div>
                  <h1 className="checkout_title">
-                   장바구니
+                  <img className="https://fontawesome.com/v5.15/icons/shopping-basket?style=solid" alt="">장바구니
 
                  </h1>
 

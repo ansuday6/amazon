@@ -14,8 +14,8 @@ function Subtotal() {
         renderText={(value) => (
           <>
             <p>
-
-             ( 총 금액 ( {basket?.length} items) : <strong> {value}원 </strong>
+ 
+             (  총 금액 ( {basket?.length} items ) : <strong> {value}원 </strong>
 
 
              </p>
@@ -31,7 +31,7 @@ function Subtotal() {
      value={getBasketTotal(basket)}
      displayType={"text"}
      thousandSepartor={true}
-     prefix={"w"}
+     prefix={" w "}
 
      />
 

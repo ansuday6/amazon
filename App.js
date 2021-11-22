@@ -14,12 +14,10 @@ function App() {
          <Header />
 
            <Routes>
-
-             <Route Path="/checkout" element={<Checkout />} />
+            
              <Route path="/" element={<Home />} />
-             
+             <Route Path="/checkout" element={<Checkout />} />
            </Routes> 
-
         </div>
 
     </Router>

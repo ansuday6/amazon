@@ -12,7 +12,7 @@ ReactDOM.render(
   <React.StrictMode>
      <StateProvider initialState ={initialState} reducer={reducer}>
        <App /> 
-       <Checkout /> 
+       <Checkout />
      </ StateProvider>
        
   </React.StrictMode>,
