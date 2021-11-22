@@ -3,12 +3,18 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import Checkout from './Checkout';
-
 import reportWebVitals from './reportWebVitals';
+import {StateProvider} from './StateProvider';
+import reducer, { initialState } from './Reducer';
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App /><Checkout />
+     <StateProvider initialState ={initialState} reducer={reducer}>
+       <App /> 
+       <Checkout /> 
+     </ StateProvider>
+       
   </React.StrictMode>,
   
   document.getElementById('root')
