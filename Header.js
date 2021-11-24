@@ -7,7 +7,10 @@ import { useStateValue } from './StateProvider';
 
 
 
+
+
 function Header() {
+
   const [{basket}, dispatch] = useStateValue();
   return (
     <div className="header">
@@ -25,7 +28,12 @@ function Header() {
 
         <div className="header_option">
           <span className="header_optionLineOne"> 안녕하세요!</span>
+          <Link to="/login"div className="homelogin">
+             
+         
+          
           <span className="header_optionLineTwo"> 로그인하기 </span>
+          </Link>
 
 
         </div>
@@ -47,7 +55,7 @@ function Header() {
         </div>
 
       
-      <Link to="checkout">
+       <Link to="checkout">
         <div className="header_optionBasket">
           <ShoppingBasket/>
           <span className="header_optionLineTwoheader_basketCount">

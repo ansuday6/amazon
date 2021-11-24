@@ -45,7 +45,7 @@ function Product( {id, title, image, price, rating} ) {
       </div>
       
       <img src={image} alt=""/>
-      <button onClick={addToBasket}>장바구니에 담기</button>
+      <button onClick={addToBasket}><strong>장바구니에 담기</strong></button>
       
     </div>
   );

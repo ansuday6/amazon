@@ -3,11 +3,15 @@ import "./Checkout.css";
 import Subtotal from "./Subtotal";
 import CheckoutProduct from  "./CheckoutProduct";
 import { useStateValue } from './StateProvider';
+import Header from "./Header";
 
 
 function Checkout() {
   const [{basket}, distpatch] = useStateValue ();
   return (
+  <div className="{Header}">
+    <Header />
+  
     <div className="checkout">
             <div className="checkout_left">
                 <img className="checkout_ad"
@@ -16,7 +20,7 @@ function Checkout() {
 
                <div>
                  <h1 className="checkout_title">
-                  <img className="https://fontawesome.com/v5.15/icons/shopping-basket?style=solid" alt="">장바구니
+                      장바구니
 
                  </h1>
 
@@ -42,7 +46,9 @@ function Checkout() {
 
 
             
+  
      </div>
+    </div>
   );
 }
 
