@@ -14,6 +14,11 @@ function Login() {
 
   const signIn = e => {
      e.preventDefault()
+     auth 
+       .signInWithEmailAndPassword(email, password)
+       .then(auth => {
+         navigate("/")
+       })
 
     }
   const register = e => {
@@ -22,7 +27,7 @@ function Login() {
      auth.createUserWithEmailAndPassword(email, password, setPassword)
       .then((auth) => {
         if(auth) {
-          navigate("/home")
+          navigate("/")
         }
        console.log(auth)
         })
