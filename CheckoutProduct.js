@@ -6,8 +6,9 @@ import {useStateValue} from "./StateProvider";
 
 
 function CheckoutProduct({id, image, title, price, rating}) {
- const [{basket}, dispatch] = useStateValue();
+ const [{ basket }, dispatch] = useStateValue();
   const removeFromBasket = () => {
+
     dispatch({
       type:'REMOVE_FROM_BASKET',
       id:id,
@@ -23,18 +24,19 @@ function CheckoutProduct({id, image, title, price, rating}) {
     <div className="checkoutProduct">
       <img className="checkoutProduct_image" src={image} alt="" />
       
-      <div className="checkoutProduct_info">
-        <p className="checkoutProduct_title">
-          {title}
-        </p>
+    <div className="checkoutProduct_info">
 
-        <p className="checkoutProduct_price">
+         <p className="checkoutProduct_title">
+          {title}
+           </p>
+
+         <p className="checkoutProduct_price">
            <small>w</small>
            <strong>{price}</strong>
            <small>원</small>
-        </p>
+           </p>
 
-        <div className="checkoutProduct_rating">
+       <div className="checkoutProduct_rating">
            {
              Array(rating)
               .fill()
@@ -42,9 +44,9 @@ function CheckoutProduct({id, image, title, price, rating}) {
                 <p>★</p>
               ))
           }
-        </div>
+         </div>
 
-        <button onClick={removeFromBasket}>장바구니에서 삭제</button>
+        <button onClick={removeFromBasket}> 장바구니에서 삭제 </button>
 
       </div>
     </div>

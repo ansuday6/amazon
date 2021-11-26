@@ -35,18 +35,13 @@ function App() {
            type: 'SET_USER',
            user: null
            
-          })
-        }
-    })
+           })
+         }
+       })
 
 
- }, []
-
-
- )
-  
-    
-
+    }, []
+    )
    return (
     <Router>
        <div className="App">
