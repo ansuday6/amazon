@@ -7,7 +7,8 @@ import Header from "./Header";
 
 
 function Checkout() {
-  const [{basket}, distpatch] = useStateValue ();
+  const [{basket,user}, distpatch] = useStateValue ();
+  
   return (
   <div className="{Header}">
     <Header />
@@ -20,7 +21,7 @@ function Checkout() {
 
                <div>
                  <h1 className="checkout_title">
-                      장바구니
+                     {user?.email}의 장바구니
 
                  </h1>
 

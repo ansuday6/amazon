@@ -14,8 +14,7 @@ function Login() {
 
   const signIn = e => {
      e.preventDefault()
-     auth 
-       .signInWithEmailAndPassword(email, password)
+     auth.signInWithEmailAndPassword(email, password)
        .then(auth => {
          navigate("/")
        })
@@ -75,7 +74,7 @@ function Login() {
 
         
 
-       <button onClick={register} className="login_registerButton"> 회원가입 </button>
+      <button onClick={register} className="login_registerButton"> 회원가입 </button>
 
 
 

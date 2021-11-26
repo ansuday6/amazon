@@ -14,9 +14,9 @@ function CheckoutProduct({id, image, title, price, rating}) {
 
 
 
-    });
+      });
 
-  };
+   };
 
   return (
    

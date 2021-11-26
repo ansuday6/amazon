@@ -2,10 +2,12 @@ import React, { useEffect } from 'react';
 import "./App.css";
 import Home from  "./Home";
 import Checkout from "./Checkout";
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./Login";
 import { auth } from './firebase';
 import { useStateValue } from './StateProvider';
+import Payment from "./Payment";
+
 
 
 
@@ -38,10 +40,10 @@ function App() {
     })
 
 
-}, []
+ }, []
 
 
-)
+ )
   
     
 
@@ -49,13 +51,16 @@ function App() {
     <Router>
        <div className="App">
         
-
            <Routes>
              <Route path="/login" element={<Login />} />
 
-             <Route path="/" element={<Home />}/>
+             <Route path="/" element={<Home />} />
 
              <Route path="/checkout" element={<Checkout />} />
+
+             <Route path="/payment" element={<Payment /> } />
+
+           
            </Routes> 
         </div>
 
